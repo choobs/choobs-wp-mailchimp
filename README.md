@@ -12,6 +12,9 @@ This plugin enables the feature to implement [Mailchimp](https://www.mailchimp.c
 2. Activate the plugin through the "Plugins" menu in WordPress.
 3. Go to "Mailchimp" from the menu and update Mailchimp settings.
 
+## Usage
+Visit the [wiki](https://github.com/choobs/choobs-wp-mailchimp/wiki) to learn how to use the plugin.
+
 ## Frequently Asked Questions
 **Do I need an active Mailchimp account?**
 
