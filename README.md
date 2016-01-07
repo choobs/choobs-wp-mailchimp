@@ -2,7 +2,7 @@
 This plugin enables the feature to implement [Mailchimp](https://www.mailchimp.com) sign up on WordPress websites. Plugin uses this [PHP library](https://bitbucket.org/mailchimp/mailchimp-api-php/overview) as the API wrapper.
 
 ## Features
-* Create unlimited Multiple sign up forms
+* Create unlimited sign up forms
 * AJAX form submit
 * Multilingual enabled
 * Add sign up forms anywhere either using shortcodes or widgets
