@@ -1,0 +1,124 @@
+/**
+ * CSS file to stylize the admin area of Mailchimp plugin
+ * @author: Ashiqur Rahman
+ * @author_url: https://www.choobs.com
+ **/
+.choobs-wp-mailchimp-options .choobs-wp-mailchimp-admin-form h2 {
+    cursor: pointer;
+    padding: 10px;
+    background: #333333;
+    color: #CCCCCC;
+}
+
+.choobs-wp-mailchimp-options .choobs-wp-mailchimp-admin-form h2 span.dashicons {
+    float: right;
+}
+
+.choobs-wp-mailchimp-options .choobs-wp-mailchimp-admin-form h2.active {
+    background: #039885;
+    color: #FAFAFA;
+}
+
+.choobs-wp-mailchimp-options input[type=text],
+.choobs-wp-mailchimp-options input[type=password],
+.choobs-wp-mailchimp-options input[type=number],
+.choobs-wp-mailchimp-options input[type=url],
+.choobs-wp-mailchimp-options select,
+.choobs-wp-mailchimp-options textarea {
+    width: 300px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.choobs-wp-mailchimp-options select {
+    padding: 0 5px;
+}
+
+.choobs-wp-mailchimp-options textarea {
+    width: 450px;
+    height: 120px;
+}
+
+.choobs-wp-mailchimp-msg {
+    display: block;
+    padding: 10px;
+    background: #039885;
+    color: #FAFAFA;
+}
+
+.choobs-wp-mailchimp-msg a {
+    color: #FAFAFA;
+}
+
+div.notice.warning {
+    border-color: #ffba00;
+}
+
+div.notice.error {
+    border-color: #ff4511;
+}
+
+form .form-group,
+form .form-submit{
+    display: block;
+    clear: both;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form .form-group:hover {
+    background: #FEFEFE;
+}
+
+form .form-group label {
+    width: 200px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+form .form-group .form-control {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#available_fields table th {
+    text-align: left;
+}
+
+#available_fields table td,
+#available_fields table th {
+    padding: 5px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+tr.draft:hover td {
+    background: #f4ffd9;
+}
+
+tr.inactive:hover td {
+    background: #ffe1df;
+}
+
+tr.active:hover td {
+    background: #98c6aa;
+}
+
+@media screen and (max-width: 700px) {
+    form .form-group label {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    form .form-group .form-control {
+        float: none;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+    }
+}
