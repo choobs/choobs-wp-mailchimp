@@ -126,7 +126,7 @@ class choobs_wp_mailchimp {
 						<div id="loading_circle_3" class="loading-circle"></div>
 					</div>';
 
-		$html = '<form class="wp-mailchimp-form" name="wp-mailchimp-form-' . $wp_mailchimp_atts['id'] . '"
+		$html = '<form class="choobs-wp-mailchimp-form" name="wp-mailchimp-form-' . $wp_mailchimp_atts['id'] . '"
 					id="wp_mailchimp_form_' . $wp_mailchimp_atts['id'] . '"
 					method="post"
 					action="' . admin_url( 'admin-ajax.php' ) . '?action=mailchimp-submit">' . $html . '</form>';

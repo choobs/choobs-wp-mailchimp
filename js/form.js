@@ -6,7 +6,7 @@
  **/
 
 (function(){
-    jQuery('form.choobs-wp-mailchimp-form').on('submit', function(e) {
+    jQuery(document).on('submit', 'form.choobs-wp-mailchimp-form', function(e) {
         e.preventDefault();
         jQuery(this).addClass('loading');
         jQuery.ajax({
