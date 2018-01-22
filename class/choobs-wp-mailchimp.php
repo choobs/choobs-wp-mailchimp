@@ -136,14 +136,20 @@ class choobs_wp_mailchimp {
 
 	public function mailchimp_submit() {
 
+        	$ajax = isset( $_POST['ajax'] ) ? $_POST['ajax'] : 0;
 		$nonce = $_POST['mailchimpNonce'];
-		if ( ! wp_verify_nonce( $nonce, 'mailchimp-nonce' ) ) {
-			die ( __( 'Security verification failed!', $this->plugin_slug ) );
-		}
+		if( $ajax == 0 ) {
+            		if ( ! wp_verify_nonce( $nonce, 'mailchimp-nonce' ) ) {
+                		die ( __( 'Security verification failed!', $this->plugin_slug ) );
+            		}
+        	} else {
+            		if ( ! check_ajax_referer( 'mailchimp-nonce', 'mailchimpNonce' ) ) {
+               			die ( __( 'Security verification failed!', $this->plugin_slug ) );
+            		}
+        	}
 
 		$return_url = isset( $_SERVER['HTTP_REFERER'] ) ? $_SERVER['HTTP_REFERER'] : esc_attr( $_POST['request_url'] );
 		$form_id = esc_attr( $_POST['form_id'] );
-		$ajax = isset( $_POST['ajax'] ) ? $_POST['ajax'] : 0;
 		$email = $_POST['EMAIL'];
 
 		global $wpdb, $choobs_wp_mailchimp_forms_table;
